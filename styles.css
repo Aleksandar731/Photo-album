@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(pexels-mihis-alex-21014.jpg) !important;
+    background-size: cover;
+    background-attachment: fixed !important;
+    background-position: center;
+}
+
+.gallery {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+    transition: transform 1s ease;
+    border-radius: 10%;
+    box-shadow: 3px 3px 7px black;
+}
+
+.images img:hover {
+    transform: rotate(10deg) scale(1.2);
+    filter: brightness(50%);
+}
+
+@media (max-width: 600px) {
+    .images img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
